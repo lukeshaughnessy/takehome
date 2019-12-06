@@ -1,5 +1,5 @@
 FROM python:3.6
-LABEL maintainer="Peng Xiao<xiaoquwl@gmail.com>"
+LABEL maintainer="lukeshaughnessy@gmail.com"
 
 COPY . /
 
