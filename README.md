@@ -1,5 +1,8 @@
 # docker-compose-flask
 
+### Thank you to https://github.com/xiaopeng163/docker-compose-flask
+
+
 ```
 
 +-------------+       +------------+         +--------------+     +-----------+
@@ -45,7 +48,7 @@ OpenSSL version: OpenSSL 1.0.2j  26 Sep 2016
 ### build and up
 
 ```sh
-$ git clone https://github.com/xiaopeng163/docker-compose-flask
+$ git clone https://github.com/lukeshaughnessy/takehome.git
 $ cd docker-compose-flask
 $ docker-compose build
 $ docker-compose up -d
@@ -68,12 +71,9 @@ dockercomposeflask_web_1     /runserver.sh                    Up      0.0.0.0:80
 Check the web service
 
 ```sh
-$ curl 127.0.0.1
-Hello Container World! I have been seen 1 times and my hostname is 09ad15ad1b51.
-$ curl 127.0.0.1
-Hello Container World! I have been seen 2 times and my hostname is 09ad15ad1b51.
-$ curl 127.0.0.1
-Hello Container World! I have been seen 3 times and my hostname is 09ad15ad1b51.
+$ curl http://localhost
+$ curl -X POST -H "Content-Type: application/json" -d "{\"name\": \"Tom\"}" http://localhost
+$ curl http://localhost
 ```
 
 ### stop the service
