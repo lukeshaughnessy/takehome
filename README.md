@@ -1,6 +1,6 @@
 # docker-compose-flask
 
-### Thank you to https://github.com/xiaopeng163/docker-compose-flask
+Thank you to https://github.com/xiaopeng163/docker-compose-flask
 
 
 ```
@@ -49,7 +49,7 @@ OpenSSL version: OpenSSL 1.0.2j  26 Sep 2016
 
 ```sh
 $ git clone https://github.com/lukeshaughnessy/takehome.git
-$ cd docker-compose-flask
+$ cd takehome
 $ docker-compose build
 $ docker-compose up -d
 Starting dockercomposeflask_redis_1 ... done
